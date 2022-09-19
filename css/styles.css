@@ -49,7 +49,8 @@ a {
     letter-spacing: 0.02em;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--blue)
 }
 
@@ -61,7 +62,8 @@ a {
     color: var(--grey-text);
 }
 
-.contact-link-header:hover{
+.contact-link-header:hover
+.contact-link-header:focus{
     color:var(--blue);
 }
 
@@ -82,6 +84,7 @@ a {
 .order-btn {
     background-color: var(--blue);
     box-shadow: 0px 4px 4px var(--btn-box-shadow);
+    cursor: pointer;
 }
 
 .order-btn-txt {
@@ -164,7 +167,8 @@ ul.team-list > li {
 .contact-link-footer {
     color: var(--footer-contacts);
 }
-.contact-link-footer:hover {
+.contact-link-footer:hover,
+.contact-link-footer:focus {
     color: var(--blue);
 }
 
@@ -186,9 +190,11 @@ ul.team-list > li {
     letter-spacing: 0.03em;
 }
 
-.portfolio-btn:hover {
+.portfolio-btn:hover
+.portfolio-btn:focus {
     background-color: var(--blue);
     color: white;
+    cursor: pointer;
 }
 
 .portfolio-list > li {
