@@ -23,8 +23,7 @@ a {
     background-color: var(--white);
 }
 
-.nav-link.main-page,
-.nav-link.portfolio-page {
+.nav-link.current {
     color: var(--blue);
 }
 
