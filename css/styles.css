@@ -4,7 +4,6 @@
     --blue:#2196F3;
     --logo-color:#000000;
     --white:#FFFFFF;
-    --white-for-bg: #F5F5F5;
     --less-white-for-bg: #F5F4FA;
     --footer-contacts:rgba(255, 255, 255, 0.6);
     --bg-grey: #2F303A;
@@ -22,6 +21,11 @@ a {
 
 .header {
     background-color: var(--white);
+}
+
+.nav-link.main-page,
+.nav-link.portfolio-page {
+    color: var(--blue);
 }
 
 .logo-txt-header,
@@ -50,7 +54,8 @@ a {
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.nav-link:active {
     color: var(--blue)
 }
 
@@ -85,14 +90,13 @@ a {
     background-color: var(--blue);
     box-shadow: 0px 4px 4px var(--btn-box-shadow);
     cursor: pointer;
-}
-
-.order-btn-txt {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    text-align: center;
     color:var(--white);
+    font-family: inherit;
 }
 
 .unic-name {
@@ -110,10 +114,6 @@ a {
     color:var(--grey-text);
 }
 
-.unics,
-.activity {
-    background-color: var(--white-for-bg);
-}
 .team {
     background-color: var(--less-white-for-bg);
 }
@@ -134,11 +134,14 @@ ul.team-list > li {
 
 .teammate-name,
 .teammate-career {
-    font-weight: 500;
-    font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.teammate-name {
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .teammate-career {
@@ -172,17 +175,13 @@ ul.team-list > li {
     color: var(--blue);
 }
 
-/* -----------------------------------PORTFOLIO PAGE BELOW------------------------------- */
-
-.portfolio {
-    /* background-color: var(--white-for-bg); */
+address {
+    font-style: normal;
 }
 
+/* -----------------------------------PORTFOLIO PAGE BELOW------------------------------- */
 .portfolio-btn {
     background-color: var(--less-white-for-bg);
-}
-
-.portfolio-btn-txt {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -209,7 +208,6 @@ ul.team-list > li {
 }
 
 .portfolio-descr {
-    font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--grey-text);
